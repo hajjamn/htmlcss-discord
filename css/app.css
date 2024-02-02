@@ -271,3 +271,15 @@ footer nav .row {
 footer [class^=button] {
     font-size: 12px;
 }
+
+.wave-container {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+.wave-container-white {
+    width: 100%;
+    height: 50px;
+    background-color: #F6F6F6;
+}
