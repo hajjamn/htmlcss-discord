@@ -57,6 +57,13 @@ a, button {
     background-color: #23272A;
 }
 
+.f-weight-500 {
+    font-weight: 500;
+}
+
+.f-weight-700 {
+    font-weight: 700;
+}
 
 /* LAYOUT */
 
@@ -221,6 +228,31 @@ header nav .links {
 
 main section {
     padding: 20px 0;
+}
+
+.main-intro {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position-x: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.main-intro h1 {
+    margin: 10px 0 25px 0;
+    font-size: 48px;
+}
+
+.main-intro p {
+    margin: 20px 0;
+    font-size: 18px;
+
+}
+
+.main-intro .main-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 /* FOOTER */
