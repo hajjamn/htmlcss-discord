@@ -233,7 +233,7 @@ header section {
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
-    padding: 80px 0;
+    padding: 80px 0 120px 0; 
     color: white;
 }
 
@@ -255,6 +255,21 @@ header section {
 }
 
 /* MAIN */
+
+main .row {
+    align-items: center;
+    align-items: stretch;
+}
+
+main .col-33 {
+    padding: 30px 15px;
+}
+
+main h2 {
+    font-size: 40px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
 
 /* FOOTER */
 
