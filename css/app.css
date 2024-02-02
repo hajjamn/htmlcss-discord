@@ -19,19 +19,7 @@ a, button {
     color: currentColor;
 }
 
-/* FRAMEWORK */
-
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* UTILITY FIRST */
+/* UTILITY */
 
 .col-16_5 {
     width: calc(100% / 6)
@@ -69,67 +57,103 @@ a, button {
     text-align: right;
 }
 
+/* LAYOUT */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+main section {
+    padding: 20px 0;
+}
+
+footer section{
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+footer .cards {
+    border-bottom: 1px solid #CCCDCD;
+}
+
+.debug footer nav {
+    padding-top: 20px;
+}
+
+.debug footer nav .row {
+    padding: 10px 0;
+    justify-content: space-between;
+}
+
+/* STYLE */
+
+* {
+    font-family: 'gg sans', sans-serif;
+}
+
+.bgwhite {
+    background-color: white;
+}
+
+.bggrey {
+    background-color: #D3D3D3;
+}
+
+.bgblack {
+    background-color: #23272A;
+}
 
 /* DEBUG */
 
-/* REMOVE WHEN DONE */
-/* .debug .row {
+.debug [class^=container] {
+    border: 1px solid black;
+    padding: 4px;
+    background-color: red;
+}
+
+.debug .row {
     border: 2px dashed black;
-    padding: 5px;
+    padding: 4px;
     background-color: white;
-} */
+}
 
 .debug [class^=col] {
-    border: 2px dashed black;
-    padding: 5px;
+    border: 2px dotted black;
+    padding: 4px;
+    background-color: blue;
 }
 
 .debug header {
     background-color: #ADD8E6;
-    border-bottom: 2px solid #ADD8E6; /* O padding-bottom */
 }
 
-.debug header nav {
-    padding-bottom: 20px;
-}
-
-.debug header nav [class^=col] {
+.debug header [class^=col] {
     background-color: #DAA520;
-}
-
-.debug header {
-    padding-top: 20px;
-}
-
-.debug .bgblue .row {
-    min-height: 250px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .debug .bgblue [class^=col] {
     background-color: #EE82EE;
+    min-height: 400px;
 }
 
 .debug .bgblue {
     background-color: #00008B;
-    padding: 20px;
-}
-
-.debug .bgwhite {
-    background-color: white;
-}
-
-.debug .bggrey {
-    background-color: #D3D3D3;
-}
-
-.debug .bgblack {
-    background-color: #23272A;
-}
-
-.debug main section {
-    padding: 40px;
 }
 
 .debug main .col-33 {
@@ -149,11 +173,6 @@ a, button {
     background-color: #228B22;
 }
 
-.debug footer section{
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-
 .debug footer .cards [class^=col] {
     min-height: 350px;
 }
@@ -167,21 +186,11 @@ a, button {
     border-color: white;
 }
 
-.debug footer .cards {
-    border-bottom: 1px solid #CCCDCD;
-}
-
 .debug footer nav .row {
     background-color: #7FFFD4;
-    padding: 10px 0;
-    justify-content: space-between;
 }
 
 .debug footer nav .row div {
     background-color: #FFB6C1;
     font-size: 10px;
-}
-
-.debug footer nav {
-    padding-top: 20px;
 }
