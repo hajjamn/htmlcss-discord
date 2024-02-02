@@ -214,7 +214,7 @@ a, button {
 header {
     padding-top: 20px;
     color: white;
-    background-color: #3161E0;
+    background-color: #255EE9;
 }
 
 header nav .links {
@@ -222,6 +222,7 @@ header nav .links {
     align-items: center;
     gap: 25px;
     font-weight: 600;
+    font-size: 12px;
 }
 
 header section {
@@ -302,11 +303,40 @@ main .item-big {
 footer section{
     padding-top: 5px;
     padding-bottom: 20px;
+    color: white;
 }
 
 footer .cards {
-    border-bottom: 1px solid #CCCDCD;
+    border-bottom: 1px solid #8EA1E1;
+    padding: 20px 0;
+    font-size: 12px;
 }
+
+footer .cards row {
+    align-items: flex-start;
+}
+
+footer .cards [class^=col] {
+    padding: 0 50px;
+}
+
+.language-menu {
+}
+
+.language-menu img {
+    max-width: 20px;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
+footer h2, footer h3 {
+    color: #8EA1E1;
+}
+
+
+
+
+
 
 footer nav {
     padding-top: 20px;
