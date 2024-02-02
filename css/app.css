@@ -19,28 +19,6 @@ a, button {
     color: currentColor;
 }
 
-/* STYLE */
-
-* {
-    font-family: 'gg sans', sans-serif;
-}
-
-.bgwhite {
-    background-color: white;
-}
-
-.bggrey {
-    background-color: #D3D3D3;
-}
-
-.bgblack {
-    background-color: #23272A;
-}
-
-header {
-    background-color: #3161E0;
-}
-
 /* UTILITY */
 
 .justify-center {
@@ -66,6 +44,19 @@ header {
 .ta-right {
     text-align: right;
 }
+
+.bgwhite {
+    background-color: white;
+}
+
+.bggrey {
+    background-color: #D3D3D3;
+}
+
+.bgblack {
+    background-color: #23272A;
+}
+
 
 /* LAYOUT */
 
@@ -108,37 +99,30 @@ header {
     width: 100%;
 }
 
-/* HEADER */
+/* STYLE */
 
-header {
-    padding-bottom: 20px;
-    padding-top: 20px;
+* {
+    font-family: 'gg sans', sans-serif;
 }
 
-/* MAIN */
-
-main section {
-    padding: 20px 0;
+[class^=button] {
+    border-radius: 25px ;
+    padding: 10px 15px;
 }
 
-/* FOOTER */
-
-footer section{
-    padding-top: 5px;
-    padding-bottom: 20px;
+.button-white {
+    background-color: white;
+    color: black;
 }
 
-footer .cards {
-    border-bottom: 1px solid #CCCDCD;
+.button-black {
+    background-color: #23272A;
+    color: white;
 }
 
-footer nav {
-    padding-top: 20px;
-}
-
-footer nav .row {
-    padding: 10px 0;
-    justify-content: space-between;
+.button-blue {
+    background-color: #8EA1E1;
+    color: white;
 }
 
 /* DEBUG */
@@ -152,7 +136,7 @@ footer nav .row {
 .debug .row {
     border: 2px dashed black;
     padding: 4px;
-    background-color: white;
+    background-color: green;
 }
 
 .debug [class^=col] {
@@ -215,4 +199,46 @@ footer nav .row {
 .debug footer nav .row div {
     background-color: #FFB6C1;
     font-size: 10px;
+}
+
+/* HEADER */
+
+header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #3161E0;
+    color: white;
+}
+
+header nav .links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: 600;
+}
+
+/* MAIN */
+
+main section {
+    padding: 20px 0;
+}
+
+/* FOOTER */
+
+footer section{
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+footer .cards {
+    border-bottom: 1px solid #CCCDCD;
+}
+
+footer nav {
+    padding-top: 20px;
+}
+
+footer nav .row {
+    padding: 10px 0;
+    justify-content: space-between;
 }
