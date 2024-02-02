@@ -19,30 +19,40 @@ a, button {
     color: currentColor;
 }
 
+/* STYLE */
+
+* {
+    font-family: 'gg sans', sans-serif;
+}
+
+.bgwhite {
+    background-color: white;
+}
+
+.bggrey {
+    background-color: #D3D3D3;
+}
+
+.bgblack {
+    background-color: #23272A;
+}
+
+header {
+    background-color: #3161E0;
+}
+
 /* UTILITY */
 
-.col-16_5 {
-    width: calc(100% / 6)
+.justify-center {
+	justify-content: center;
 }
 
-.col-25 {
-    width: 25%;
+.justify-between {
+	justify-content: space-between;
 }
 
-.col-33 {
-    width: calc(100% / 3);
-}
-
-.col-50 {
-    width: 50%;
-}
-
-.col-66 {
-    width: calc(2 * 100% / 3);
-}
-
-.col-100 {
-    width: 100%;
+.row-reverse {
+	flex-direction: row-reverse;
 }
 
 .ta-left {
@@ -74,14 +84,44 @@ a, button {
     flex-wrap: wrap;
 }
 
+.col-16_5 {
+    width: calc(100% / 6)
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: calc(100% / 3);
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-66 {
+    width: calc(2 * 100% / 3);
+}
+
+.col-100 {
+    width: 100%;
+}
+
+/* HEADER */
+
 header {
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
+/* MAIN */
+
 main section {
     padding: 20px 0;
 }
+
+/* FOOTER */
 
 footer section{
     padding-top: 5px;
@@ -92,31 +132,13 @@ footer .cards {
     border-bottom: 1px solid #CCCDCD;
 }
 
-.debug footer nav {
+footer nav {
     padding-top: 20px;
 }
 
-.debug footer nav .row {
+footer nav .row {
     padding: 10px 0;
     justify-content: space-between;
-}
-
-/* STYLE */
-
-* {
-    font-family: 'gg sans', sans-serif;
-}
-
-.bgwhite {
-    background-color: white;
-}
-
-.bggrey {
-    background-color: #D3D3D3;
-}
-
-.bgblack {
-    background-color: #23272A;
 }
 
 /* DEBUG */
